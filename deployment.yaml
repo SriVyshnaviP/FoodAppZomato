@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: zomato
+  namespace: default
   labels:
     app: zomato
 spec:
@@ -19,4 +20,5 @@ spec:
         image: srivyshnavip/zomato:latest
         ports:
         - containerPort: 3000
+
 
