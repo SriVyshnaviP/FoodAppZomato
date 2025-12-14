@@ -8,10 +8,10 @@
       k8s:
         kubeconfig: ~/.kube/config
         state: present
-        src: deployment.yml
+        src: deployment.yaml
 
     - name: Apply Service to EKS
       k8s:
         kubeconfig: ~/.kube/config
         state: present
-        src: service.yml
+        src: service.yaml
